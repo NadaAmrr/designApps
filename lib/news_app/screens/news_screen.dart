@@ -21,40 +21,38 @@ class _NewsTabState extends State<NewsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          currentIndex: index,
-          onTap: (value) {
-            index = value;
-            setState(() {});
-          },
-          backgroundColor: Colors.white,
-          elevation: 0,
-          showSelectedLabels: true,
-          showUnselectedLabels: false,
-          unselectedItemColor: Colors.grey,
-          selectedItemColor: Colors.purple.shade400,
-          selectedLabelStyle: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.purple.shade400), // Define selected label style
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.calendar_today_outlined,
-                size: 25,
-              ),
-              label: "Today",
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        currentIndex: index,
+        onTap: (value) {
+          index = value;
+          setState(() {});
+        },
+        backgroundColor: Colors.white,
+        elevation: 0,
+        showSelectedLabels: true,
+        showUnselectedLabels: false,
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.purple.shade400,
+        selectedLabelStyle: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.purple.shade400), // Define selected label style
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.calendar_today_outlined,
+              size: 25,
             ),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.grid_view, size: 25), label: "Insights"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.chat_bubble_outline, size: 25), label: "Chat"),
-          ],
-        ),
-        body: tabs[index],
+            label: "Today",
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.grid_view, size: 25), label: "Insights"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.chat_bubble_outline, size: 25), label: "Chat"),
+        ],
       ),
+      body: tabs[index],
     );
   }
 

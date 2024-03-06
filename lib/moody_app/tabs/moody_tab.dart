@@ -155,7 +155,7 @@ class _MoodyTabState extends State<MoodyTab> {
             /// 3- Exercise container
             ///Exercise
             SizedBox(
-              height: MediaQuery.of(context).size.height * (0.23),
+              // height: MediaQuery.of(context).size.height * (0.23),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
