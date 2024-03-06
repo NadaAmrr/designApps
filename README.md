@@ -1,6 +1,9 @@
 # exam_c10_friday
 
-A new Flutter project.
+![moody-workout-Apps](https://github.com/NadaAmrr/designApps/assets/115532651/1d8234ea-e929-41a2-9e96-e4b5ab23fea3)
+
+![news-app](https://github.com/NadaAmrr/designApps/assets/115532651/2b3ffe47-3f63-4296-88c3-a12174b54e7d)
+
 
 ## Getting Started
 
